@@ -63,7 +63,7 @@ class HomePage extends StatelessWidget {
         animSpeedFactor: 10,
         showChildOpacityTransition: false,
         onRefresh: handlerRefresh,
-        springAnimationDurationInMilliseconds: 750,
+        // springAnimationDurationInMilliseconds: 1000,
         child: ListView.builder(
           padding: const EdgeInsets.only(top: 10, bottom: 30),
           itemCount: exercises.length,
