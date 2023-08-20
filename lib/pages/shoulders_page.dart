@@ -96,6 +96,7 @@ class _ShouldersPageState extends State<ShouldersPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: kPrimaryColor,
         title: const Text(

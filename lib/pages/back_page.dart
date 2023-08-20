@@ -89,6 +89,7 @@ class _BackPageState extends State<BackPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: kPrimaryColor,
         title: const Text(

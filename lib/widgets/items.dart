@@ -108,35 +108,46 @@ class Item extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.only(top: 25),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      child: Column(
         children: [
-          Image.asset(image!, height: 80, width: 80),
-          Sets(
-            setNo: '1',
-            controller0: dataStored0,
-            onChanged0: onChanged0,
-            controller1: dataStored1,
-            onChanged1: onChanged1,
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Image.asset(image!, height: 80, width: 80),
+              Sets(
+                setNo: '1',
+                controller0: dataStored0,
+                onChanged0: onChanged0,
+                controller1: dataStored1,
+                onChanged1: onChanged1,
+              ),
+              const SizedBox(width: 10),
+              Sets(
+                setNo: '2',
+                controller0: dataStored2,
+                onChanged0: onChanged2,
+                controller1: dataStored3,
+                onChanged1: onChanged3,
+              ),
+              const SizedBox(width: 10),
+              Sets(
+                setNo: '3',
+                controller0: dataStored4,
+                onChanged0: onChanged4,
+                controller1: dataStored5,
+                onChanged1: onChanged5,
+              ),
+              // const SizedBox(width: 10),
+              // Sets(setNo: '4'),
+            ],
           ),
-          const SizedBox(width: 10),
-          Sets(
-            setNo: '2',
-            controller0: dataStored2,
-            onChanged0: onChanged2,
-            controller1: dataStored3,
-            onChanged1: onChanged3,
-          ),
-          const SizedBox(width: 10),
-          Sets(
-            setNo: '3',
-            controller0: dataStored4,
-            onChanged0: onChanged4,
-            controller1: dataStored5,
-            onChanged1: onChanged5,
-          ),
-          // const SizedBox(width: 10),
-          // Sets(setNo: '4'),
+          // const SizedBox(height: 15),
+          // const Divider(
+          //   thickness: 2,
+          //   color: kPrimaryColor,
+          //   indent: 50,
+          //   endIndent: 50,
+          // ),
         ],
       ),
     );
