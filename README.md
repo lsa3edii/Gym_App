@@ -1,8 +1,8 @@
 # Gym App
 
 ## Pages
-![Screenshot 2023-08-20 090316](https://github.com/lsa3edii/Test/assets/87280713/b413b4c0-0705-49e2-87d2-68e2a3956cbb)
-![Screenshot 2023-08-20 090347](https://github.com/lsa3edii/Test/assets/87280713/422d139e-2839-4ae5-9455-261dc0dfe305)
+![Screenshot 2023-08-20 095952](https://github.com/lsa3edii/Gym_App/assets/87280713/5873c4bd-dbca-436f-9ae0-046be4580efa)
+![Screenshot 2023-08-20 095822](https://github.com/lsa3edii/Gym_App/assets/87280713/c44e55fd-1d80-4bc0-8f38-f2d26dc6e6b7)
 
-![Screenshot 2023-08-20 090440](https://github.com/lsa3edii/Test/assets/87280713/59e35546-14a3-4455-9368-312c2e2cbb0a)
-![Screenshot 2023-08-20 090511](https://github.com/lsa3edii/Test/assets/87280713/33c52c1e-227d-4fc2-bf45-ef5287ee6599)
+![Screenshot 2023-08-20 095850](https://github.com/lsa3edii/Gym_App/assets/87280713/2b1e5ce6-8025-4f62-b7bd-1eed03abde5b)
+![Screenshot 2023-08-20 095924](https://github.com/lsa3edii/Gym_App/assets/87280713/1937e85e-a61b-4ad9-8aa3-d21fbeaa3422)
