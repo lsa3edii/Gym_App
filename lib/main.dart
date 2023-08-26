@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:gym_app/pages/home_page.dart';
 import 'package:flutter/services.dart';
+import 'package:gym_app/pages/home_page.dart';
+import 'package:gym_app/constants.dart';
 // import 'package:device_preview/device_preview.dart';
 // import 'package:responsive_framework/responsive_framework.dart';
 
@@ -32,8 +33,10 @@ class GymApp extends StatelessWidget {
       //     // breakpointsLandscape: [],
       //   );
       // },
-      debugShowCheckedModeBanner: false,
       // theme: ThemeData(brightness: Brightness.dark),
+      title: 'Gym App',
+      color: kPrimaryColor,
+      debugShowCheckedModeBanner: false,
       home: HomePage(),
     );
   }
