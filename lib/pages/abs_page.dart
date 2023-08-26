@@ -54,37 +54,45 @@ class _AbsPageState extends State<AbsPage> {
         ),
       ),
       body: ListView(
+        scrollDirection: Axis.horizontal,
         children: [
-          Item(
-            image: images[0],
-            dataStored0: model.dataStored[0],
-            onChanged0: (data) {
-              model.values[0] = data;
-            },
-            dataStored1: model.dataStored[1],
-            onChanged1: (data) {
-              model.values[1] = data;
-            },
-            dataStored2: model.dataStored[2],
-            onChanged2: (data) {
-              model.values[2] = data;
-            },
-            dataStored3: model.dataStored[3],
-            onChanged3: (data) {
-              model.values[3] = data;
-            },
-            dataStored4: model.dataStored[4],
-            onChanged4: (data) {
-              model.values[4] = data;
-            },
-            dataStored5: model.dataStored[5],
-            onChanged5: (data) {
-              model.values[5] = data;
-            },
+          SizedBox(
+            width: 400,
+            child: ListView(
+              children: [
+                Item(
+                  image: images[0],
+                  dataStored0: model.dataStored[0],
+                  onChanged0: (data) {
+                    model.values[0] = data;
+                  },
+                  dataStored1: model.dataStored[1],
+                  onChanged1: (data) {
+                    model.values[1] = data;
+                  },
+                  dataStored2: model.dataStored[2],
+                  onChanged2: (data) {
+                    model.values[2] = data;
+                  },
+                  dataStored3: model.dataStored[3],
+                  onChanged3: (data) {
+                    model.values[3] = data;
+                  },
+                  dataStored4: model.dataStored[4],
+                  onChanged4: (data) {
+                    model.values[4] = data;
+                  },
+                  dataStored5: model.dataStored[5],
+                  onChanged5: (data) {
+                    model.values[5] = data;
+                  },
+                ),
+                const SizedBox(height: 20),
+                CustomButton.saveAndClear(filesNames, model),
+                const SizedBox(height: 15),
+              ],
+            ),
           ),
-          const SizedBox(height: 20),
-          CustomButton.saveAndClear(filesNames, model),
-          const SizedBox(height: 15),
         ],
       ),
     );

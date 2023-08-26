@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:gym_app/pages/home_page.dart';
 import 'package:flutter/services.dart';
-// import 'package:responsive_framework/responsive_framework.dart';
 // import 'package:device_preview/device_preview.dart';
+// import 'package:responsive_framework/responsive_framework.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -38,3 +38,49 @@ class GymApp extends StatelessWidget {
     );
   }
 }
+
+// class VerticalAndHorizontal extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       home: ScrollableGrid(),
+//     );
+//   }
+// }
+
+// class ScrollableGrid extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(
+//         title: Text('Vertical and Horizontal Scrolling'),
+//       ),
+//       body: SingleChildScrollView(
+//         scrollDirection: Axis.horizontal,
+//         child: Column(
+//           children: [
+//             SingleChildScrollView(
+//               scrollDirection: Axis.vertical,
+//               child: SizedBox(
+//                 width: 500, // Set the width of the vertical content
+//                 height: 300, // Set the height of the vertical content
+//                 child: GridView.builder(
+//                   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+//                     crossAxisCount: 5, // Number of columns
+//                   ),
+//                   itemCount: 20,
+//                   itemBuilder: (context, index) {
+//                     return Container(
+//                       margin: EdgeInsets.all(8),
+//                       color: Colors.blue,
+//                     );
+//                   },
+//                 ),
+//               ),
+//             ),
+//           ],
+//         ),
+//       ),
+//     );
+//   }
+// }
