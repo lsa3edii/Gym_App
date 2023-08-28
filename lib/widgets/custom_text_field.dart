@@ -20,6 +20,7 @@ class CustomTextField extends StatelessWidget {
           border: OutlineInputBorder(),
           contentPadding: EdgeInsets.symmetric(horizontal: 10),
         ),
+        keyboardType: TextInputType.number,
         style: const TextStyle(fontSize: 11, fontFamily: 'Pacifico'),
       ),
     );
