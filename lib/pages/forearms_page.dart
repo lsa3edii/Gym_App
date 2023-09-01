@@ -64,69 +64,73 @@ class _ForearmsPageState extends State<ForearmsPage> {
       ),
       body: ListView(
         scrollDirection: Axis.horizontal,
+        physics: const BouncingScrollPhysics(),
         children: [
           SizedBox(
             width: 400,
-            child: ListView(
-              children: [
-                Item(
-                  image: images[0],
-                  dataStored0: model.dataStored[0],
-                  onChanged0: (data) {
-                    model.values[0] = data;
-                  },
-                  dataStored1: model.dataStored[1],
-                  onChanged1: (data) {
-                    model.values[1] = data;
-                  },
-                  dataStored2: model.dataStored[2],
-                  onChanged2: (data) {
-                    model.values[2] = data;
-                  },
-                  dataStored3: model.dataStored[3],
-                  onChanged3: (data) {
-                    model.values[3] = data;
-                  },
-                  dataStored4: model.dataStored[4],
-                  onChanged4: (data) {
-                    model.values[4] = data;
-                  },
-                  dataStored5: model.dataStored[5],
-                  onChanged5: (data) {
-                    model.values[5] = data;
-                  },
-                ),
-                Item(
-                  image: images[1],
-                  dataStored0: model.dataStored[6],
-                  onChanged0: (data) {
-                    model.values[6] = data;
-                  },
-                  dataStored1: model.dataStored[7],
-                  onChanged1: (data) {
-                    model.values[7] = data;
-                  },
-                  dataStored2: model.dataStored[8],
-                  onChanged2: (data) {
-                    model.values[8] = data;
-                  },
-                  dataStored3: model.dataStored[9],
-                  onChanged3: (data) {
-                    model.values[9] = data;
-                  },
-                  dataStored4: model.dataStored[10],
-                  onChanged4: (data) {
-                    model.values[10] = data;
-                  },
-                  dataStored5: model.dataStored[11],
-                  onChanged5: (data) {
-                    model.values[11] = data;
-                  },
-                ),
-                const SizedBox(height: 20),
-                CustomButton.saveAndClear(filesNames, model),
-                const SizedBox(height: 15),
-              ],
+            child: Scrollbar(
+              child: ListView(
+                physics: const BouncingScrollPhysics(),
+                children: [
+                  Item(
+                    image: images[0],
+                    dataStored0: model.dataStored[0],
+                    onChanged0: (data) {
+                      model.values[0] = data;
+                    },
+                    dataStored1: model.dataStored[1],
+                    onChanged1: (data) {
+                      model.values[1] = data;
+                    },
+                    dataStored2: model.dataStored[2],
+                    onChanged2: (data) {
+                      model.values[2] = data;
+                    },
+                    dataStored3: model.dataStored[3],
+                    onChanged3: (data) {
+                      model.values[3] = data;
+                    },
+                    dataStored4: model.dataStored[4],
+                    onChanged4: (data) {
+                      model.values[4] = data;
+                    },
+                    dataStored5: model.dataStored[5],
+                    onChanged5: (data) {
+                      model.values[5] = data;
+                    },
+                  ),
+                  Item(
+                    image: images[1],
+                    dataStored0: model.dataStored[6],
+                    onChanged0: (data) {
+                      model.values[6] = data;
+                    },
+                    dataStored1: model.dataStored[7],
+                    onChanged1: (data) {
+                      model.values[7] = data;
+                    },
+                    dataStored2: model.dataStored[8],
+                    onChanged2: (data) {
+                      model.values[8] = data;
+                    },
+                    dataStored3: model.dataStored[9],
+                    onChanged3: (data) {
+                      model.values[9] = data;
+                    },
+                    dataStored4: model.dataStored[10],
+                    onChanged4: (data) {
+                      model.values[10] = data;
+                    },
+                    dataStored5: model.dataStored[11],
+                    onChanged5: (data) {
+                      model.values[11] = data;
+                    },
+                  ),
+                  const SizedBox(height: 20),
+                  CustomButton.saveAndClear(filesNames, model),
+                  const SizedBox(height: 15),
+                ],
+              ),
             ),
           ),
         ],

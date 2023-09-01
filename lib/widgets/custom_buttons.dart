@@ -28,6 +28,7 @@ class CustomButton extends StatelessWidget {
   static Row saveAndClear(List<String> filesNames, Model model) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
+      // mainAxisSize: MainAxisSize.min,
       children: [
         CustomButton(
           buttonName: 'Save',

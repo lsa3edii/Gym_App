@@ -4,13 +4,13 @@ import 'package:gym_app/constants.dart';
 class Category extends StatelessWidget {
   final String buttonName;
   final String image;
-  final VoidCallback onPressed;
+  final VoidCallback onTap;
 
   const Category(
       {super.key,
       required this.buttonName,
       required this.image,
-      required this.onPressed});
+      required this.onTap});
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +22,7 @@ class Category extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             GestureDetector(
-              onTap: onPressed,
+              onTap: onTap,
               child: Image.asset(image, height: 60),
             ),
             // const SizedBox(width: 20),
@@ -31,7 +31,7 @@ class Category extends StatelessWidget {
                 backgroundColor: kPrimaryColor,
                 minimumSize: const Size(250, 50),
               ),
-              onPressed: onPressed,
+              onPressed: onTap,
               child: Text(
                 buttonName,
                 style: const TextStyle(fontSize: 25, fontFamily: 'Pacifico'),

@@ -65,20 +65,23 @@ class HomePage extends StatelessWidget {
         showChildOpacityTransition: false,
         onRefresh: handlerRefresh,
         // springAnimationDurationInMilliseconds: 1000,
-        child: ListView.builder(
-          padding: const EdgeInsets.only(top: 10, bottom: 30),
-          itemCount: exercises.length,
-          itemBuilder: (context, i) {
-            return Category(
-              buttonName: exercises[i],
-              image: imagesOfExercises[i],
-              onPressed: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context) {
-                  return getPage(i)!;
-                }));
-              },
-            );
-          },
+        child: Scrollbar(
+          child: ListView.builder(
+            physics: const BouncingScrollPhysics(),
+            padding: const EdgeInsets.only(top: 10, bottom: 30),
+            itemCount: exercises.length,
+            itemBuilder: (context, i) {
+              return Category(
+                buttonName: exercises[i],
+                image: imagesOfExercises[i],
+                onTap: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return getPage(i)!;
+                  }));
+                },
+              );
+            },
+          ),
         ),
       ),
     );
